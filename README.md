@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# ✨ Task Master
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, feature-rich task management application built with React, TypeScript, and Tailwind CSS. Task Master helps you organize your daily tasks with style and efficiency.
 
-Currently, two official plugins are available:
+![Task Master Preview](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-4.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
 
-## React Compiler
+### Core Functionality
+- ✅ **Create, Edit, Delete Tasks** - Full CRUD operations for task management
+- 🎨 **Priority Levels** - Organize tasks by Low, Medium, or High priority
+- 📅 **Due Dates** - Set deadlines for your tasks
+- 🔍 **Smart Filtering** - View All, Active, or Completed tasks
+- 💾 **Persistent Storage** - Tasks are saved locally and persist across sessions
+- ✏️ **Inline Editing** - Quick edit functionality with keyboard shortcuts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Visual Excellence
+- 🌓 **Dark/Light Mode** - Toggle between themes with smooth transitions
+- 🎭 **Glassmorphism Design** - Modern frosted glass effects
+- 💫 **100+ Animated Elements** - Living, breathing background with:
+  - Floating orbs and particles
+  - Twinkling stars
+  - Rising bubbles
+  - Shooting stars
+  - Orbiting dots
+  - Pulsing rings
+- 🎊 **Confetti Celebration** - Animated confetti when completing tasks
+- 📊 **Progress Tracking** - Visual progress bar showing completion rate
+- ✨ **Smooth Animations** - Micro-interactions throughout the app
 
-## Expanding the ESLint configuration
+### User Experience
+- ⌨️ **Keyboard Shortcuts** - Press Enter to add or save tasks
+- 📱 **Fully Responsive** - Works perfectly on desktop, tablet, and mobile
+- 🎯 **Intuitive Interface** - Clean, modern UI with easy navigation
+- 🔄 **Real-time Stats** - Live updates of total, active, and completed tasks
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
+- Node.js (v18 or higher)
+- npm (v9 or higher)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**
+```bash
